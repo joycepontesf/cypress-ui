@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Execução dos Cypress'){
             steps {
-                sh 'NO_COLOR=1 npx cypress run --headless --browser chrome'
+                sh 'NO_COLOR=1 npx cypress run --headless --browser electron'
             }
         }
     }
